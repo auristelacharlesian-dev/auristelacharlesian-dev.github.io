@@ -9,40 +9,42 @@
   <style>
     body { font-family: 'Segoe UI', sans-serif; }
     .hero { background: linear-gradient(135deg, #4f46e5, #7c3aed); }
-    .section-title { color: #6366f1; }
+    .section-title { color: #818cf8; }
+    .card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(0,0,0,0.4); }
   </style>
 </head>
 <body class="bg-gray-950 text-white">
 
   <!-- Hero Section -->
   <section class="hero min-h-screen flex items-center justify-center text-center px-6">
-    <div>
-      <h1 class="text-5xl md:text-7xl font-bold mb-4">Hi, I'm Auristela Charles Ian 👋</h1>
-      <p class="text-2xl md:text-3xl mb-8">Student of Institute of Computing, Davao Del Norte State College | Aspiring Information System Developer</p>
-      <a href="#about" class="inline-block bg-white text-indigo-700 font-semibold px-8 py-4 rounded-full text-lg hover:bg-gray-200 transition">
+    <div class="animate-fadeIn">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Hi, I'm <span class="text-yellow-300">Auristela Charles Ian</span> 👋</h1>
+      <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-gray-200">
+        Student of Institute of Computing, Davao Del Norte State College <br> Aspiring Information System Developer
+      </p>
+      <a href="#about" class="inline-block bg-yellow-300 text-gray-900 font-semibold px-8 py-4 rounded-full text-lg hover:bg-yellow-400 transition">
         Get to Know Me ↓
       </a>
     </div>
   </section>
 
-  <!-- Profile Photo + About -->
+  <!-- About -->
   <section id="about" class="py-20 px-6 bg-gray-900">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-bold text-center mb-12 section-title">About Me</h2>
-     
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="flex-shrink-0">
           <img src="./profile.1.jfif"
                alt="Auristela Charles Ian"
                class="w-72 h-72 rounded-3xl object-cover border-4 border-indigo-500 shadow-2xl">
         </div>
-       
-        <div class="flex-1">
-          <p class="text-lg leading-relaxed text-gray-300">
+        <div class="flex-1 text-gray-300 space-y-6">
+          <p class="text-lg leading-relaxed">
             Welcome to my portfolio! I'm an IS student with a strong passion for programming,
             particularly in Java. I enjoy learning new technologies and applying them to solve real-world problems.
           </p>
-          <p class="text-lg leading-relaxed text-gray-300 mt-6">
+          <p class="text-lg leading-relaxed">
             This website showcases my skill, project, and achievement as I continue to grow in the field of software development.
           </p>
         </div>
@@ -52,12 +54,10 @@
 
   <!-- Skills -->
   <section class="py-20 px-6 bg-gray-950">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-12 section-title">My Skill</h2>
-      <div class="flex justify-center">
-        <div class="bg-gray-900 px-12 py-8 rounded-3xl text-center text-2xl font-semibold border border-indigo-500">
-          Java
-        </div>
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12 section-title">My Skill</h2>
+      <div class="inline-block bg-gray-900 px-12 py-8 rounded-3xl text-2xl font-semibold border border-indigo-500 shadow-lg">
+        Java
       </div>
     </div>
   </section>
@@ -66,18 +66,14 @@
   <section class="py-20 px-6 bg-gray-900">
     <div class="max-w-5xl mx-auto">
       <h2 class="text-4xl font-bold text-center mb-12 section-title">Featured Project</h2>
-      
-      <!-- Savings and Loan Monitoring System -->
-      <div class="max-w-3xl mx-auto bg-gray-800 p-10 rounded-3xl hover:scale-105 transition duration-300">
+      <div class="card bg-gray-800 p-10 rounded-3xl">
         <h3 class="text-3xl font-bold mb-4">Savings and Loan Monitoring System</h3>
         <p class="text-indigo-400 mb-6">Community Savings Group (CSG) Management System</p>
-        
         <p class="text-gray-300 mb-6">
           A Java-based desktop application designed to automate the management of savings and loan transactions 
           for Community Savings Groups. It replaces manual record-keeping with a more accurate and efficient system.
         </p>
-        
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-2 gap-4 text-sm text-gray-200">
           <div><strong>Role:</strong> Co-Developer</div>
           <div><strong>Technology:</strong> Java</div>
           <div><strong>Team:</strong> Charles Ian, Quinnilyn, Mary Joy</div>
@@ -89,9 +85,9 @@
 
   <!-- Certificates -->
   <section class="py-20 px-6 bg-gray-950">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-4 section-title">My Certificate</h2>
-      <div class="bg-gray-800 p-10 rounded-3xl text-center mt-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4 section-title">My Certificate</h2>
+      <div class="card bg-gray-800 p-10 rounded-3xl mt-8">
         <h3 class="text-2xl font-semibold mb-2">ByteFest 3.0 MTV Spoof 1st Runner-up</h3>
         <p class="text-indigo-400">BYTEFEST 3.0 • 2026</p>
       </div>
@@ -100,14 +96,14 @@
 
   <!-- Hobbies -->
   <section class="py-20 px-6 bg-gray-900">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-5xl mx-auto">
       <h2 class="text-4xl font-bold text-center mb-12 section-title">Hobbies</h2>
       <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-gray-800 p-8 rounded-3xl">
+        <div class="card bg-gray-800 p-8 rounded-3xl">
           <h3 class="text-2xl mb-4">🎮 Playing Online Games</h3>
           <p class="text-gray-300">Especially <strong>Mobile Legends</strong> — my favorite way to relax and have fun with friends.</p>
         </div>
-        <div class="bg-gray-800 p-8 rounded-3xl">
+        <div class="card bg-gray-800 p-8 rounded-3xl">
           <h3 class="text-2xl mb-4">🎥 Watching Movies & Series</h3>
           <p class="text-gray-300">I love watching action, romance, thriller, and other interesting films.</p>
         </div>
@@ -118,7 +114,7 @@
   <!-- Contact -->
   <section class="py-20 px-6 bg-gray-950 text-center">
     <h2 class="text-4xl font-bold mb-10 section-title">Let's Connect</h2>
-    <div class="flex justify-center gap-8 text-5xl">
+    <div class="flex justify-center gap-10 text-5xl">
       <a href="https://www.instagram.com/chrlsiann/" target="_blank" class="hover:text-pink-500 transition">
         <i class="fab fa-instagram"></i>
       </a>

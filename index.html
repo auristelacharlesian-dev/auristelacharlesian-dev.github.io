@@ -3,80 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auristela Charlesian | Portfolio</title>
+  <title>Auristela Charles Ian | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-    body { background: #0f0f1a; color: #fff; line-height: 1.6; }
-    header { height: 100vh; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; text-align: center; }
-    .hero h1 { font-size: 4rem; margin-bottom: 10px; }
-    .hero p { font-size: 1.5rem; opacity: 0.9; }
-    section { padding: 80px 10%; }
-    h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; color: #667eea; }
-    .about, .skills, .projects { background: #1a1a2e; }
-    .skills-grid, .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .skill-card, .project-card {
-      background: #16213e;
-      padding: 25px;
-      border-radius: 15px;
-      text-align: center;
-      transition: 0.3s;
-    }
-    .skill-card:hover, .project-card:hover { transform: translateY(-10px); background: #0f3460; }
-    footer { text-align: center; padding: 40px; background: #0a0a14; }
+    body { font-family: 'Segoe UI', sans-serif; }
+    .hero { background: linear-gradient(135deg, #4f46e5, #7c3aed); }
+    .section-title { color: #6366f1; }
   </style>
 </head>
-<body>
+<body class="bg-gray-950 text-white">
 
-  <header>
-    <div class="hero">
-      <h1>Hi, I'm Auristela Charlesian 👋</h1>
-      <p>IT Student | Aspiring Developer | Tech Enthusiast</p>
-      <br>
-      <a href="#about" style="color:white; background:#667eea; padding:15px 30px; border-radius:50px; text-decoration:none;">Learn More About Me</a>
-    </div>
-  </header>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p style="max-width:800px; margin:0 auto; text-align:center; font-size:1.2rem;">
-      Welcome to my portfolio! I'm a passionate IT student who loves technology, problem-solving, and creating digital solutions. 
-      I'm constantly learning and improving my skills in web development and software engineering.
-    </p>
-  </section>
-
-  <section class="skills">
-    <h2>My Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">HTML5</div>
-      <div class="skill-card">CSS3</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">Python</div>
-      <div class="skill-card">Java</div>
-      <div class="skill-card">Git & GitHub</div>
+  <!-- Hero Section -->
+  <section class="hero min-h-screen flex items-center justify-center text-center px-6">
+    <div>
+      <h1 class="text-5xl md:text-7xl font-bold mb-4">Hi, I'm Auristela Charles Ian 👋</h1>
+      <p class="text-2xl md:text-3xl mb-8">IS Student | Aspiring Java Developer</p>
+      <a href="#about" class="inline-block bg-white text-indigo-700 font-semibold px-8 py-4 rounded-full text-lg hover:bg-gray-200 transition">
+        Get to Know Me ↓
+      </a>
     </div>
   </section>
 
-  <section class="projects" style="background:#0f0f1a;">
-    <h2>Featured Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Short description of your project...</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Short description of your project...</p>
+  <!-- Profile Photo + About -->
+  <section id="about" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 section-title">About Me</h2>
+      
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <!-- Profile Photo -->
+        <div class="flex-shrink-0">
+          <img src="https://via.placeholder.com/300x300/6366f1/ffffff?text=Your+Photo" 
+               alt="Auristela Charles Ian" 
+               class="w-72 h-72 rounded-3xl object-cover border-4 border-indigo-500 shadow-2xl">
+        </div>
+        
+        <!-- About Text -->
+        <div class="flex-1">
+          <p class="text-lg leading-relaxed text-gray-300">
+            Welcome to my portfolio! I'm an IS student with a strong passion for programming, 
+            particularly in Java. I enjoy learning new technologies and applying them to solve real-world problems.
+          </p>
+          <p class="text-lg leading-relaxed text-gray-300 mt-6">
+            This website showcases my skills, projects, and achievements as I continue to grow in the field of software development.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2026 Auristela Charlesian • Built with ❤️ using GitHub Pages</p>
-  </footer>
+  <!-- Skills -->
+  <section class="py-20 px-6 bg-gray-950">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 section-title">My Skills</h2>
+      <div class="flex justify-center">
+        <div class="bg-gray-900 px-12 py-8 rounded-3xl text-center text-2xl font-semibold border border-indigo-500">
+          Java
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="py-20 px-6 bg-gray-900">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 section-title">Featured Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-8 rounded-3xl hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-3">Project Title 1</h3>
+          <p class="text-gray-400 mb-4">Short description of your first Java project (e.g. Inventory System, Calculator, etc.)</p>
+          <a href="#" class="text-indigo-400 hover:underline">View Project →</a>
+        </div>
+        
+        <div class="bg-gray-800 p-8 rounded-3xl hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-3">Project Title 2</h3>
+          <p class="text-gray-400 mb-4">Short description of your second project...</p>
+          <a href="#" class="text-indigo-400 hover:underline">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section class="py-20 px-6 bg-gray-950">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-4 section-title">My Certificates</h2>
+      <div class="bg-gray-800 p-10 rounded-3xl text-center mt-8">
+        <h3 class="text-2xl font-semibold mb-2">ByteFest 3.0 MTV Spoof 1st Runner-up</h3>
+        <p class="text-indigo-400">BYTEFEST 3.0 • 2026</p>
+        <p class="mt-6 text-gray-300">
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section class="py-20 px-6 bg-gray-900">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 section-title">Hobbies</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-8 rounded-3xl">
+          <h3 class="text-2xl mb-4">🎮 Playing Online Games</h3>
+          <p class="text-gray-300">Especially <strong>Mobile Legends</strong> — my favorite way to relax and have fun with friends.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-3xl">
+          <h3 class="text-2xl mb-4">🎥 Watching Movies & Series</h3>
+          <p class="text-gray-300">I love watching action, romance, thriller, and other interesting films.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-20 px-6 bg-gray-950 text-center">
+    <h2 class="text-4xl font-bold mb-10 section-title">Let's Connect</h2>
+    <div class="flex justify-center gap-8 text-5xl">
+      <a href="https://www.instagram.com/chrlsiann/" target="_blank" class="hover:text-pink-500 transition">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/chrlsIann.01" target="_blank" class="hover:text-blue-500 transition">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://github.com/auristelacharlesian-dev" target="_blank" class="hover:text-gray-400 transition">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <p class="mt-12 text-gray-400">© 2026 Auristela Charles Ian • Built with ❤️ on GitHub Pages</p>
+  </section>
 
 </body>
 </html>

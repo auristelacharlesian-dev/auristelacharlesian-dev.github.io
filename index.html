@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auristela Charlesian | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background: #0f0f1a; color: #fff; line-height: 1.6; }
+    header { height: 100vh; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; text-align: center; }
+    .hero h1 { font-size: 4rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.5rem; opacity: 0.9; }
+    section { padding: 80px 10%; }
+    h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; color: #667eea; }
+    .about, .skills, .projects { background: #1a1a2e; }
+    .skills-grid, .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .skill-card, .project-card {
+      background: #16213e;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .skill-card:hover, .project-card:hover { transform: translateY(-10px); background: #0f3460; }
+    footer { text-align: center; padding: 40px; background: #0a0a14; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>Hi, I'm Auristela Charlesian 👋</h1>
+      <p>IT Student | Aspiring Developer | Tech Enthusiast</p>
+      <br>
+      <a href="#about" style="color:white; background:#667eea; padding:15px 30px; border-radius:50px; text-decoration:none;">Learn More About Me</a>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p style="max-width:800px; margin:0 auto; text-align:center; font-size:1.2rem;">
+      Welcome to my portfolio! I'm a passionate IT student who loves technology, problem-solving, and creating digital solutions. 
+      I'm constantly learning and improving my skills in web development and software engineering.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section class="projects" style="background:#0f0f1a;">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Short description of your project...</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Short description of your project...</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Auristela Charlesian • Built with ❤️ using GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
